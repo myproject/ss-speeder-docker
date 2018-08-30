@@ -9,4 +9,8 @@ fi
 
 /etc/init.d/ssh restart
 
-/usr/local/bin/ssserver "$@"
+if [[ ! -z "$@" ]]; then
+	/usr/local/bin/ssserver -s 0.0.0.0 "$@"
+else
+	/usr/local/bin/ssserver -s 0.0.0.0 -p 10080 -k 123456789 -m rc4-md5
+fi
