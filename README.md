@@ -4,7 +4,7 @@
 ## Docker启动
 
 ```
-docker run -d --name ss-with-net-speeder -p 10080:10080 -p 22:22 icegreen/ss-speeder-docker -s 0.0.0.0 -p 8989 -k RUYO.net -m rc4-md5
+docker run -d --name ss-with-net-speeder -p 10080:10080 -p 22:22 icegreen/ss-speeder-docker -s 0.0.0.0 -p 10080 -k 123456789 -m rc4-md5
 ```
 
 ## 支持Docker Hub部署的托管（如：Arukas.io） 启动
